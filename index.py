@@ -6,7 +6,7 @@ from googleapiclient.discovery import build
 RSS_URL  = "https://myblog08565.tistory.com/rss"
 SCOPES   = ["https://www.googleapis.com/auth/indexing"]
 KEY_FILE = "service_account.json"
-DAYS     = 1
+DAYS     = 30
 
 def get_recent_urls():
     feed   = feedparser.parse(RSS_URL)
